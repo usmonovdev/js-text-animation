@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f1f1f;
+}
+
+h1{
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.281));
+    line-height: 0.71em;
+    text-align: center;
+    width: 100%;
+    animation: text 5s linear infinite;
+}
+
+@keyframes text {
+    0%, 15%, 30%, 60%, 65%, 70%, 90%{
+        color: #ffffff1c;
+        text-shadow: none;
+    }
+
+    100%, 20%, 50%{
+        color: #fff;
+        text-shadow: 0px 0px 10px gold,
+        0px 0px 20px gold,
+        0px 0px 40px gold,
+        0px 0px 80px gold,
+        0px 0px 160px rgb(255, 230, 0);
+    }
+}
